@@ -1,7 +1,8 @@
 import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        int randomNumber = (int) (Math.random() * 100) +1;
+        int randomNumber = (int) (Math.random() * 100) + 1;
         boolean hasWon = false;
         System.out.println("I have random chosen a number between 1 and 100");
         System.out.println("Try to guess it");
@@ -15,7 +16,7 @@ public class Main {
                 System.out.println("You guess to small number");
             } else if (guess > randomNumber) {
                 System.out.println("You guess to big number");
-            }else {
+            } else {
                 hasWon = true;
                 break;
             }
@@ -23,7 +24,6 @@ public class Main {
         }
         if (hasWon) {
             System.out.println("CORRECT You win !");
-        }else System.out.println("GAME OVER You lose number was " + randomNumber);
-
+        } else System.out.println("GAME OVER You lose number was " + randomNumber);
     }
 }
